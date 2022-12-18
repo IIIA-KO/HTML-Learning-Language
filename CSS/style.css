@@ -1,0 +1,459 @@
+body{
+    background-color: #151515;
+    font-family: Trebuchet MS;
+    min-width: 100px;
+
+    moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+#line-orange-main{
+    position: absolute;
+    z-index: 0;
+    top: -70px;
+    left: -100px;
+    rotate: -10deg;
+
+    width: 600px;
+    height: auto;
+}
+#line-blue-main{
+    position: absolute;
+    z-index: 0;
+    bottom: 0px;
+    right: 0px;
+
+    width: 600px;
+    height: auto;
+}
+#line-blue-main2{
+    position: absolute;
+    z-index: 0;
+    bottom: -474px;
+    right: 0px;
+
+    width: 600px;
+    height: auto;
+    transform: scaleY(-1);
+}
+h2{
+    padding-bottom: 20px;
+}
+
+#Content{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+#cards-block{
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+}
+
+.card, .s-card{
+    position: relative;
+    overflow: hidden;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.s-card{
+    height: 100%;
+    width: 100%;
+}
+
+/*------------------------------------------------------ВИДИМІСТЬ------------------------------------------------------*/
+#t-r-c-adapt-small{ visibility: visible}
+#t-r-c-adapt-big{visibility: hidden}
+
+#t-l-c-adapt-small{visibility: visible}
+#t-l-c-adapt-big{visibility: hidden}
+
+#b-l-c-adapt-small{visibility: visible}
+#b-l-c-adapt-big{ visibility: hidden}
+
+#b-r-c-adapt-small{visibility: visible}
+#b-r-c-adapt-big{visibility: hidden}
+
+/*------------------------------------------------------КАРТИНКИ------------------------------------------------------*/
+.picture-box{
+    overflow: hidden;
+    background-size: cover;
+}
+
+#pic-box-mainCard{
+    background-image: url("../Images/Stock photos/resized-woman-in-yellow-unsplash.jpg");
+}
+#pic-box-top-right-card{
+    background-image: url("../Images/Stock photos/writing-unsplash.jpg");
+}
+#pic-box-bottom-left-card{
+    background-image: url("../Images/Stock photos/resised-listening-unsplash.jpg");
+}
+
+#pic-big-red-box-t-l-c{
+    background-image: url("../Images/Stock photos/resized-dog-unsplash.jpg");
+}
+#pic-big-orange-box-t-l-c{
+    background-image: url("../Images/Stock photos/resized-stydy-unsplash.jpg");
+}
+#pic-small-red-box-t-l-c{
+    background-image: url("../Images/Stock photos/resized-dog-unsplash.jpg");
+}
+#pic-small-orange-box-t-l-c{
+    background-image: url("../Images/Stock photos/resized-stydy-unsplash.jpg");
+}
+
+#pic-big-purple-box-b-r-c{
+    background-image: url("../Images/Stock photos/resized-backpack-unsplash.jpg");
+}
+#pic-big-orange-box-b-r-c{
+    background-image: url("../Images/Stock photos/resized-night-unsplash.jpg");
+}
+#pic-big-red-box-b-r-c{
+    background-image: url("../Images/Stock photos/student-unsplash.jpg");
+}
+#pic-small-purple-box-b-r-c{
+    background-image: url("../Images/Stock photos/resized-backpack-unsplash.jpg");
+}
+#pic-small-orange-box-b-r-c{
+    background-image: url("../Images/Stock photos/resized-night-unsplash.jpg");
+}
+#pic-small-red-box-b-r-c{
+    background-image: url("../Images/Stock photos/student-unsplash.jpg");
+}
+
+
+
+/*------------------------------------------------------АНІМАЦІЇ------------------------------------------------------*/
+.s-card:hover, .card:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.s-card:not(:hover), .card:not(:hover){
+    transform: scale(1);
+    transition: 0.3s;
+}
+
+
+
+/*------------------------------------------------------ТІНІ------------------------------------------------------*/
+#info-mainCard{
+    box-shadow:  #fff6ce 5px 5px
+}
+#pic-box-mainCard{
+    box-shadow:  #fff6ce 5px 5px
+}
+#info-top-right-card{
+    box-shadow:  #000000 5px 5px
+}
+#info-bottom-left-card{
+    box-shadow:  #000000 5px 5px
+}
+
+#info-big-red-t-l-c{
+    box-shadow:  #000000 5px 5px
+}
+#pic-big-red-box-t-l-c{
+    box-shadow:  #000000 5px 5px
+}
+#info-small-red-t-l-c{
+    box-shadow:  #000000 2.5px 2.5px
+}
+#pic-small-red-box-t-l-c{
+    box-shadow:  #000000 2.5px 2.5px
+}
+
+#info-big-orange-t-l-c{
+    box-shadow:  #000000 5px 5px
+}
+#pic-big-orange-box-t-l-c{
+    box-shadow:  #000000 5px 5px
+}
+#info-small-orange-t-l-c{
+    box-shadow:  #000000 2.5px 2.5px
+}
+#pic-small-orange-box-t-l-c{
+    box-shadow:  #000000 2.5px 2.5px
+}
+
+#pic-box-top-right-card{
+    box-shadow:  #fa9452 3.5px 3.5px
+}
+#pic-box-bottom-left-card{
+    box-shadow:  #cb6261 3.5px 3.5px
+}
+
+
+#info-big-purple-b-r-c{
+    box-shadow:  #fff6ce 5px 5px
+}
+#info-small-purple-b-r-c{
+    box-shadow:  #fff6ce 2.5px 2.5px
+}
+#info-big-orange-b-r-c{
+    box-shadow:  #fff6ce 5px 5px
+}
+#info-small-orange-b-r-c{
+    box-shadow:  #fff6ce 2.5px 2.5px
+}
+#info-big-red-b-r-c{
+    box-shadow:  #fff6ce 5px 5px
+}
+#info-small-red-b-r-c{
+    box-shadow:  #fff6ce 2.5px 2.5px
+}
+
+#pic-big-purple-box-b-r-c{
+    box-shadow:  #fff6ce 5px 5px
+}
+#pic-small-purple-box-b-r-c{
+    box-shadow:  #fff6ce 2.5px 2.5px
+}
+#pic-big-orange-box-b-r-c{
+    box-shadow:  #fff6ce 5px 5px
+}
+#pic-small-orange-box-b-r-c{
+    box-shadow:  #fff6ce 2.5px 2.5px
+}
+#pic-big-red-box-b-r-c{
+    box-shadow:  #fff6ce 5px 5px
+}
+#pic-small-red-box-b-r-c{
+    box-shadow:  #fff6ce 2.5px 2.5px
+}
+
+
+/*------------------------------------------------------ГОЛОВНКА КАРТКА------------------------------------------------------*/
+#mainCard{
+    background-color: black;
+    color: #fdecd6;
+    height: 1400px;
+    width: 50%;
+}
+#line-red-mainCard{
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    left: -35px;
+    rotate: -10deg;
+
+    width: 60%;
+    height: auto;
+}
+#line-blue-mainCard{
+    position: absolute;
+    z-index: 2;
+    bottom: -70px;
+    right: -50px;
+
+    width: 60%;
+    height: auto;
+    rotate: 100deg;
+}
+
+/*------------------------------------------------------ВЕРХНЯ ЛІВ КАРТКА------------------------------------------------------*/
+#top-left-card{
+    background-color: #fdecd6;
+    color: black;
+}
+#line-orange-top-left{
+    position: absolute;
+    z-index: 2;
+    top: -5px;
+    left: -7px;
+    rotate: 0deg;
+
+    width: 30%;
+    height: auto;
+    transform: scale(1.1);
+}
+#line-blue-top-left{
+    position: absolute;
+    z-index: 2;
+
+    bottom: 0%;
+    right:  0px;
+    rotate: 0deg;
+
+    width: 40%;
+    height: auto;
+}
+
+
+/*------------------------------------------------------ВЕРХНЯ ПРАВА КАРТКА------------------------------------------------------*/
+#top-right-card{
+    background-color: #cb6261;
+    color: black;
+}
+#line-blue-top-right{
+    position: absolute;
+    z-index: 2;
+
+    top: 0px;
+    right: 0px;
+
+    width: 50%;
+    height: auto;
+}
+#line-orange-top-right{
+    position: absolute;
+    z-index: 2;
+
+    bottom: -30px;
+    left: -30px;
+    rotate: 10deg;
+
+    width: 140%;
+    height: auto;
+}
+
+/*------------------------------------------------------НИЖНЯ ЛІВА КАРТКА------------------------------------------------------*/
+#bottom-left-card{
+    background-color: #59a4b4;
+    color: black;
+}
+#line-red-bottom-left{
+    position: absolute;
+    z-index: 2;
+
+    bottom: -30px;
+    right: -70px;
+    rotate: 25deg;
+
+    width: 150%;
+    height: auto;
+}
+#line-orange-bottom-left{
+    position: absolute;
+    z-index: 2;
+
+    top: -30px;
+    left: -20px;
+
+    width: 150%;
+    height: auto;
+    transform: scaleY(-1);
+}
+
+/*------------------------------------------------------НИЖНЯ ПРАВА КАРТКА------------------------------------------------------*/
+#bottom-right-card{
+    background-color: black;
+    color: #fdecd6;
+}
+#line-orange-bottom-right{
+    position: absolute;
+    z-index: 2;
+
+    bottom: 0px;
+    left: 0px;
+
+    width: 130%;
+    height: auto;
+}
+#line-blue-bottom-right{
+    position: absolute;
+    z-index: 2;
+
+    top: -5%;
+    right: -40px;
+
+    width: 50%;
+    height: auto;
+    rotate: -10deg;
+}
+
+/*------------------------------------------------------ПОЗИЦІОНУВАННЯ------------------------------------------------------*/
+#secondaryCards{
+    height: 1350px;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+
+    position:relative;
+    padding-bottom: 50px;
+}
+#secondaryTop{
+    height: 675px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+    column-gap: 50px;
+}
+#secondaryBottom{
+    position:absolute;
+    bottom:0;
+
+    height: 675px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+    column-gap: 50px;
+}
+
+/*------------------------------------------------------АДАПТИВНІСТЬ------------------------------------------------------*/
+@media screen and (max-width: 950px) {
+    #cards-block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        row-gap: 50px;
+    }
+
+    .star, h2{
+        transform: scale(1.5);
+    }
+    .E-learn{
+        transform: scale(2);
+    }
+
+    /*ВИДИМІСТЬ*/
+    #t-l-c-adapt-small{visibility: hidden}
+    #t-l-c-adapt-big{visibility: visible}
+
+    #t-r-c-adapt-small{ visibility: hidden}
+    #t-r-c-adapt-big{ visibility: visible}
+
+    #b-l-c-adapt-small{visibility: hidden}
+    #b-l-c-adapt-big{ visibility: visible}
+
+    #b-r-c-adapt-small{visibility: hidden}
+    #b-r-c-adapt-big{visibility: visible}
+
+
+    /*ГОЛОВНА КАРТКА*/
+    #mainCard{
+        width: 90%;
+        height: 1000px;
+    }
+
+    /*ПОЗИЦІОНУВАННЯ*/
+    #secondaryCards{
+        width: 90%;
+        row-gap: 50px;
+    }
+    #secondaryTop, #secondaryBottom{
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        position: static;
+        row-gap: 50px;
+    }
+    .s-card{
+        height: 1155px;
+    }
+}
