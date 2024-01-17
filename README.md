@@ -6,7 +6,4 @@
 ## Зразок:
 ![Example](/Reference/Reference.png)
 
-## Результат:
-![Result](/Result.mp4)
-
-Netlify link: https://loquacious-parfait-ca2aeb.netlify.app/
+## Результат: https://loquacious-parfait-ca2aeb.netlify.app/
